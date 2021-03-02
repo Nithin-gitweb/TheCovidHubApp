@@ -1,0 +1,9 @@
+<h3>Create a new account, It's free </h3>
+
+<form [formGroup]="signupform" (ngSubmit)="signUp()">
+        Username : <input type="text" formControlName="Username"/><br>
+        Email : <input type="text" formControlName="Email"/><br>
+        Password : <input type="password" formControlName="Password"/><br>
+        Phone : <input type="ngSubmit" formControlName="PhoneNumber"/><br>
+        <button type="submit" class="btn btn-primary">Sign Me Up</button>
+</form>
