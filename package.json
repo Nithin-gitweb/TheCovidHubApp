@@ -3,15 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --output-path angularapp  --aot --prod"
+    "e2e": "ng e2e"
+    
   },
   "engines": {
-    "node": "v8.11.4",
+    "node": "v12.0",
     "npm": "5.8.0"
   },
   "private": true,
