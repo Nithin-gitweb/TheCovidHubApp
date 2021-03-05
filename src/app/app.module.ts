@@ -15,9 +15,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table'
 import { ChartsModule } from 'ng2-charts';
 import { IndiaExclusiveComponent } from './Components/india-exclusive/india-exclusive.component';
-
+import { DataTablesModule } from "angular-datatables";
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,7 @@ import { IndiaExclusiveComponent } from './Components/india-exclusive/india-excl
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
-    MatButtonModule,ChartsModule
+    MatButtonModule,ChartsModule,DataTablesModule,MatProgressSpinnerModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

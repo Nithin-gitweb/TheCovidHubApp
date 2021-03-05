@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
 import { CovidServiceService } from 'src/app/Services/CovidReport/covid-service.service';
 import { CountryReports } from './CountryReports';
-import { CountryReports2} from './CountryReport2'
+import { CountryReports2} from './CountryReport2';
+import { DataTablesModule } from "angular-datatables";
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -31,6 +32,7 @@ export class DashboardComponent implements OnInit {
   displayedColumns: string[] = ['country','cases','todayCases','deaths','todayDeaths','recovered','active','critical','casesPerOneMillion','deathsPerOneMillion','tests','testsPerOneMillion'];
   sepcificCountry:string;
   specificCountryData:CountryReports =null;
+  dtOptions: DataTables.Settings = {};
   ngOnInit(): void {
     this.fetchAllData();
   }

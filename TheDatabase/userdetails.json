@@ -20,6 +20,13 @@
       "Password": "PassTheWord",
       "Email": "robland@hotmail.com",
       "PhoneNumber": "8778731301"
+    },
+    {
+      "id": 4,
+      "Username": "Abi",
+      "Password": "123456789",
+      "Email": "npt1998@outlook.com",
+      "PhoneNumber": "877831301"
     }
   ]
 }
